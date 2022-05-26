@@ -1,5 +1,13 @@
-﻿
-string dickHeadName = "Alyosha";
+﻿namespace Training
+{
+    class Program
+    {
+        static void Main()
+        {
+        }
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine($"No {dickHeadName} takoy pidoruga sranaya!!(");
+        static void FuncName()
+        {
+        }
+    }
+}
