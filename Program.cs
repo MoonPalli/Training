@@ -1,3 +1,8 @@
-﻿string taskName = "TestTask";
+﻿
+using System.Threading.Channels;
 
-Console.WriteLine($"{taskName}");
+string dickHeadName = "Alyosha";
+
+Console.WriteLine("Hello, World!");
+Console.WriteLine($"No {dickHeadName} takoy pidoruga sranaya!!(");
+Console.WriteLine("AAAAAAAA JEST");
