@@ -16,7 +16,7 @@
         public static string[] Solution(string str)
         {
             List<string> result = new List<string>();
-            string chunk = "";
+            string chunk;
             
             int chunkSize = 2;
             int stringLength = str.Length;
