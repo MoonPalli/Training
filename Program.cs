@@ -2,8 +2,10 @@
 {
     static void Main()
     {
-        SplitString.Solution("abcde");
-        Console.Read();
+        string[] testArray = SplitString.Solution("abcde");
+
+        foreach (var item in testArray)
+            Console.WriteLine($"\"{item}\"");
     }
 }
 
@@ -11,22 +13,22 @@ public class SplitString
 {
     public static string[] Solution(string str)
     {
-        string[] result = new string[] { };
+        List<string> result = new List<string>();
+        string chunk = "";
+        
         int chunkSize = 2;
         int stringLength = str.Length;
+        
         for (int i = 0; i < stringLength ; i += chunkSize)
         {
             if (i + chunkSize > stringLength)
-            {
-                chunkSize = stringLength  - i;
-                result[i] = str.Substring(i, chunkSize);
-                Console.Write("'" +str.Substring(i, chunkSize) + "_'");
-                break;
-            }
-            result[i] = str.Substring(i, chunkSize);
-            Console.Write("'" + str.Substring(i, chunkSize) + "', ");
+                chunk = (str[i].ToString() + "_");
+            else
+                chunk = (str[i].ToString() + str[i + 1].ToString());
+            
+            result.Add(chunk);
         }
-        Console.ReadLine();
-        return new []{ str };;
+
+        return result.ToArray();
     }
 }
