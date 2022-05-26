@@ -1,28 +1,27 @@
-﻿
-void Main()
+﻿namespace Training
 {
-    HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
-    Console.WriteLine("pizdec");
-    Console.ReadKey();
-}
-
-
-void HighAndLow(string numbers)
-{
-    List<int> intNumbers = new List<int>();
-    string[] charArray = numbers.Split(" ", StringSplitOptions.None);
-    foreach (var i in numbers)
+    class Program
     {
-        intNumbers.Add(Convert.ToInt32(numbers.Split(" ", StringSplitOptions.None)));
-    }
-    
-    int a = intNumbers.Max();
-    int b = intNumbers.Min();
+        static void Main()
+        {
+            HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+            Console.ReadKey();
+        }
 
-    Console.WriteLine(charArray);
-    Console.WriteLine(intNumbers);
-    Console.WriteLine(a + b);
-    
+        static string HighAndLow(string stringValue)
+        {
+            List<int> numbers = new List<int>();
+            string[] splitArray = stringValue.Split(" ");
+
+            foreach (var item in splitArray)
+            {
+                int convertedInt = Convert.ToInt32(item);
+                numbers.Add(convertedInt);
+            }
+
+            return ($"{numbers.Max()} {numbers.Min()}");
+        }
+    }
 }
 
 // Kata.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
