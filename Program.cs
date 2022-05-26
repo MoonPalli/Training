@@ -1,5 +1,3 @@
-﻿
-string dickHeadName = "Alyosha";
+﻿string taskName = "TestTask";
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine($"No {dickHeadName} takoy pidoruga sranaya!!(");
+Console.WriteLine($"{taskName}");
