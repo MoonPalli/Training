@@ -2,7 +2,6 @@
 using System.Threading.Channels;
 
 string dickHeadName = "Alyosha";
+string name = "Pigor";
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine($"No {dickHeadName} takoy pidoruga sranaya!!(");
 Console.WriteLine("AAAAAAAA JEST");
