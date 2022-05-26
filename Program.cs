@@ -1,7 +1,7 @@
-﻿
-using System.Threading.Channels;
-
-string dickHeadName = "Alyosha";
-string name = "Pigor";
-
-Console.WriteLine("AAAAAAAA JEST");
+﻿public class SplitString
+{
+    public static string[] Solution(string str)
+    {
+        return null;
+    }
+}
