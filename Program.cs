@@ -11,18 +11,15 @@
 
         public static bool ValidatePin(string pin)
         {
-            if (pin.Length == 4 || pin.Length == 6)
+            if (pin.Length != 4 || pin.Length != 6)
             {
                 foreach (var item in pin)
-                    if(char.IsDigit(item) == false)
+                    if (char.IsDigit(item) == false)
                         return false;
+                    else
+                        return true;
             }
-            else
-            {
-                return false;
-            }
-
-            return true;
+            return false;
         }
     }
 }
